@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embedded Project</title>
+  <style>
+    /* Iframe container responsive banane ke liye */
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 100%; /* 1:1 ratio, adjust kar sakte ho */
+      overflow: hidden;
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: -60px; /* Upar ki branding crop karne ke liye */
+      left: 0;
+      width: 100%;
+      height: calc(100% + 60px); /* Crop height compensate karne ke liye */
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="iframe-container">
+    <iframe src="https://lovable.dev/projects/f632d55b-ab3f-491c-9b36-1397651eacf6" allowfullscreen></iframe>
+  </div>
+
+</body>
+</html>
